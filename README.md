@@ -15,7 +15,7 @@ How do you plan on learning/implementing this new technology?
 - The new technology that will be implemented is Yaml2.0. There is a descent amount of information available through thier website documenation. What I can't learn there will come from trial and error. 
 
 What is your goal with this project?
-- The main focus of this project for me is to create a functioning backend to compile documents. It is a challenge that inspired me to learn more by taking formal coding classes at Genral Assembly. I would consider it a major success if I can get even a small part of the 50 legal documents I have stored for this use.
+- The main focus of this project is to create a functioning backend that compiles users documents. It is a challenge I have been thinking about for a long time. I would consider it a major success if I can get even a small part of the 50 legal documents I have stored for this use.
 
 Who is the user for your app?
 - My app is geared towards young families that will benefit from affordable legal plans that can be done in minutes in the comfort of their own homes. 
@@ -23,17 +23,10 @@ Who is the user for your app?
 Any potential roadblocks you think you might run into?
 - The biggest roadblock will be getting the input variables to concatenate into lengthy and comlex structure of long paragraphs and page headings. 
 
-## Tech Used
----
-* MongoDB
-* Express
-* React
-* Node
-* Yaml
-* CSS
-* Figma
-* Git
 
+## Wireframes
+---
+![website](/public/wireframes/wireframes.png)
 
 ## FRONTEND ROUTES 
 ---
@@ -55,9 +48,16 @@ Any potential roadblocks you think you might run into?
 | POST | `api-v1/users/login` | login |
 | POST | `api-v1/users/register` | register |
 
-
-## Wireframes
+## Tech Used
 ---
-![website](/public/wireframes/wireframes.png)
+* MongoDB
+* Express
+* React
+* Node
+* Yaml
+* CSS
+* Figma
+* Git
+
 
 
