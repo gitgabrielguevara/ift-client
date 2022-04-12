@@ -1,7 +1,7 @@
 #  Instant Family Trust
 
 
-This is a fullstack application that allows users to create customized legal documents to protect their assets. The website will prompt the user to answer simple questions about themselves.  The information will be combined into the complex legal document out of the users view. An example would be like a living will for a resident of California. They can fill out as much or little as they have time for and save their progress to return later.  Once complete they will be able to print out a pdf of the full legal document. They will also have the ability to update or delete information as time goes on and new documents are desired. 
+This is a fullstack application that allows users to create customized legal documents to protect their assets. The website will prompt the user to answer simple questions about themselves. Behind the scenes the information is merged into the complex legal document. An example document would be a living will for a resident of California. They can fill out as much or little as they have time for and save their progress for later.  Once complete they will be able to print out a pdf of the full legal document. They will also have the ability to update or delete information as time goes on and new documents are desired. 
 
 ## User Stories
 ---
@@ -10,21 +10,29 @@ This is a fullstack application that allows users to create customized legal doc
 * As a user I can update my documents with required data and save them.
 * As a user I can print out the finalized document for my records.
 
+### Questions and Answers
+How do you plan on learning/implementing this new technology?
+- The new technology that will be implemented is Yaml2.0. There is a descent amount of information available through thier website documenation. What I can't learn there will come from trial and error. 
 
+What is your goal with this project?
+- The main focus of this project for me is to create a functioning backend to compile documents. It is a challenge that inspired me to learn more by taking formal coding classes at Genral Assembly. I would consider it a major success if I can get even a small part of the 50 legal documents I have stored for this use.
+
+Who is the user for your app?
+- My app is geared towards young families that will benefit from affordable legal plans that can be done in minutes in the comfort of their own homes. 
+
+Any potential roadblocks you think you might run into?
+- The biggest roadblock will be getting the input variables to concatenate into lengthy and comlex structure of long paragraphs and page headings. 
 
 ## Tech Used
 ---
-* NodeJS
+* MongoDB
 * Express
 * React
-* MongoDB
+* Node
+* Yaml
 * CSS
-* Postman
 * Figma
-* Trello
 * Git
-
-![and RD](/public/DevelUp-ERD.png)
 
 
 ## FRONTEND ROUTES 
@@ -50,17 +58,6 @@ This is a fullstack application that allows users to create customized legal doc
 
 ## Wireframes
 ---
-<details>
-  <summary> Initial Planning </summary>
+![website](/public/wireframes/wireframes.png)
 
-![Sign-In](/public/wireframes/Sign%20In.png)
-![Register](/public/wireframes/Sign%20Up.png)
-![Profile](/public/wireframes/Profile%20Page.png)
-![Create-Deck](/public/wireframes/Create%20a%20deck%20Page.png)
-!document](/public/wireframesdocument%20Page.png)
-![Decks](/public/wireframes/Decks%20Page.png)
-![Card-Question](/public/wireframes/Card%20Page%20%5BQuestion%5D.png) 
-![Card-Answer](/public/wireframes/Card%20Page%20%5BAnswer%5D.png)
-![Card-Complete](/public/wireframes/Completed%20Page.png)
 
-</details>
