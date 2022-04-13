@@ -12,7 +12,7 @@ This is a fullstack application that allows users to create customized legal doc
 
 ### Questions and Answers
 How do you plan on learning/implementing this new technology?
-- The new technology that will be implemented is Yaml2.0. There is a descent amount of information available through thier website documenation. What I can't learn there will come from trial and error. 
+- The new technology that will be implemented is Yaml. There is a decent amount of information available through thier website documenation. What I can't learn there will come from trial and error. 
 
 What is your goal with this project?
 - The main focus of this project is to create a functioning backend that compiles users documents. It is a challenge I have been thinking about for a long time. I would consider it a major success if I can get even a small part of the 50 legal documents I have stored for this use.
@@ -21,7 +21,7 @@ Who is the user for your app?
 - My app is geared towards young families that will benefit from affordable legal plans that can be done in minutes in the comfort of their own homes. 
 
 Any potential roadblocks you think you might run into?
-- The biggest roadblock will be getting the input variables to concatenate into lengthy and comlex structure of long paragraphs and page headings. 
+- The biggest roadblock will be getting the input variables to concatenate into lengthy and complex structure of long page headings and paragraphs. 
 
 
 ## Wireframes
@@ -41,22 +41,22 @@ Any potential roadblocks you think you might run into?
 ---
 | Method | Path | Purpose |
 | ------ | -------------- | -------------------------------- |
-| GET | `api-v1document/:id` | displays all the documents to choose from |
-| POST | `api-v1document` | creates a form |
-| PUT | `api-v1document/:id/form/:formId` | make changes of the forms |
-| DELETE | `api-v1document/:id/form/:deckId` | deletes the whole form |
+| GET | `api-v1/document/:id` | displays all the documents to choose from |
+| POST | `api-v1/document` | creates a form |
+| PUT | `api-v1/document/:id/form/:formId` | make changes on the forms |
+| DELETE | `api-v1/document/:id/form/:deckId` | deletes the whole form |
 | POST | `api-v1/users/login` | login |
 | POST | `api-v1/users/register` | register |
 
 ## Tech Used
 ---
+* Bootstrap
 * MongoDB
 * Express
 * React
 * Node
 * Yaml
 * CSS
-* Figma
 * Git
 
 
