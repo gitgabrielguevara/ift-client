@@ -10,12 +10,27 @@ import Login from './components/pages/Login'
 import Welcome from './components/pages/Welcome'
 import Register from './components/pages/Register'
 import Profile from './components/pages/Profile'
+import Document from './components/pages/Document'
 import { useState, useEffect } from 'react';
 import jwt_decode from 'jwt-decode'
+import axios from 'axios'
 
 function App() {
   // state wi the user data when the user is logged in
   const [currentUser, setCurrentUser] = useState(null)
+  const [document, setDocument] = useState([])
+
+  // useEffect to get all of the documents from the server
+  useEffect(() => {
+    axios.get(process.env.REACT_APP_SERVER_URL + "/api-v1/document")
+      .then((response) => {
+        setDocument(response.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [])
+
   // useEffect that handles localstorage if the user navigates away fro mthe page/refreshes
   useEffect(() => { 
     const token = localStorage.getItem('jwt')
@@ -33,7 +48,7 @@ function App() {
     // set the user state to be null
     setCurrentUser(null)
   }
-   return (
+    return (
     <Router>
       <Navbar handleLogout={handleLogout} currentUser={currentUser}/>
 
@@ -48,12 +63,11 @@ function App() {
             path="/login"
             element={<Login currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
-          {/* 
+          
           <Route 
-            path="/profile"
-            element={<Profile />}
+            path="/document"    // here i put Navigate to /document instead of / bc not showing info
+            element={currentUser ? <Document document={document} /> : <Navigate to="/document" />}
           /> 
-          */}
           
           <Route 
             path="/profile"
