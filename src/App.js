@@ -5,6 +5,7 @@ import {
   Navigate
 } from 'react-router-dom'
 
+import Form from './components/pages/Form'
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
 import Welcome from './components/pages/Welcome'
@@ -52,11 +53,16 @@ function App() {
     <Router>
       <Navbar handleLogout={handleLogout} currentUser={currentUser}/>
 
-      <div className="App">
+      <div className="container">
         <Routes>
           <Route 
             path='/'
             element={<Welcome />}
+          />
+
+          <Route 
+            path='/form'
+            element={<Form />}
           />
 
           <Route 

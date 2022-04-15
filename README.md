@@ -44,7 +44,7 @@ Any potential roadblocks you think you might run into?
 | GET | `api-v1/document/:id` | displays all the documents to choose from |
 | POST | `api-v1/document` | creates a form |
 | PUT | `api-v1/document/:id/form/:formId` | make changes on the forms |
-| DELETE | `api-v1/document/:id/form/:deckId` | deletes the whole form |
+| DELETE | `api-v1/document/:id/form/:formId` | deletes the whole form |
 | POST | `api-v1/users/login` | login |
 | POST | `api-v1/users/register` | register |
 
