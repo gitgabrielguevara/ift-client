@@ -5,7 +5,7 @@ import {
   Navigate
 } from 'react-router-dom'
 
-import Form from './components/pages/Form'
+
 import Navbar from './components/layout/Navbar'
 import Login from './components/pages/Login'
 import Welcome from './components/pages/Welcome'
@@ -15,6 +15,7 @@ import Document from './components/pages/Document'
 import { useState, useEffect } from 'react';
 import jwt_decode from 'jwt-decode'
 import axios from 'axios'
+import Form from './components/pages/Form'
 
 function App() {
   // state wi the user data when the user is logged in
@@ -61,15 +62,15 @@ function App() {
           />
 
           <Route 
-            path='/form'
-            element={<Form />}
-          />
-
-          <Route 
             path="/login"
             element={<Login currentUser={currentUser} setCurrentUser={setCurrentUser} />}
           />
           
+          <Route 
+            path='/form'
+            element={currentUser ? <Form document={document} /> : <Navigate to="/form" />}
+          />
+
           <Route 
             path="/document"    // here i put Navigate to /document instead of / bc not showing info
             element={currentUser ? <Document document={document} /> : <Navigate to="/document" />}

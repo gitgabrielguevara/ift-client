@@ -31,7 +31,7 @@ export default function Document({ document }) {
             <div> 
                 <form onSubmit={onSubmit}>
                     <div> 
-                        <label htmlFor="text">here is form 001</label>
+                        <label htmlFor="text">This is form 001</label>
                         <input 
                         type="text" 
                         name='text' 
@@ -48,6 +48,5 @@ export default function Document({ document }) {
                 </form>
             </div>
         </div>
-
     );
 }
