@@ -26,7 +26,7 @@ Any potential roadblocks you think you might run into?
 
 ## Wireframes
 ---
-![website](/public/wireframes/wireframes.png)
+![Wireframes](/public/images/wireframes.png)
 
 ## FRONTEND ROUTES 
 ---
@@ -50,14 +50,12 @@ Any potential roadblocks you think you might run into?
 
 ## Tech Used
 ---
-* Bootstrap
 * MongoDB
 * Express
 * React
 * Node
-* Yaml
-* CSS
-* Git
+* pdfKit
+
 
 
 
