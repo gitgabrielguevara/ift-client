@@ -55,6 +55,10 @@ Any potential roadblocks you think you might run into?
 * React
 * Node
 * pdfKit
+* blob
+* axios
+* fs
+
 
 
 

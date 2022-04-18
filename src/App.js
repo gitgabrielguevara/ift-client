@@ -9,8 +9,9 @@ class App extends Component {
     name: '',
     street_address:'',
     city_st_zip:'',
-    price1: 129,
+    price1: 79,
     price2: 349,
+    child_name: ''
   }
 
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value })
@@ -35,6 +36,7 @@ class App extends Component {
         <input type="text" placeholder="Full Legal Name" name="name" onChange={this.handleChange}/>
         <input type="text" placeholder="Street Address" name="street_address" onChange={this.handleChange}/>
         <input type="text" placeholder="City, State ZIP" name="city_st_zip" onChange={this.handleChange}/>
+        <input type="text" placeholder="Child's Full Name" name="child_name" onChange={this.handleChange}/>
         <input type="number" placeholder="Price of CA Will Package" name="price1" onChange={this.handleChange} />
         <input type="number" placeholder="Price of CA Estate Plan" name="price2" onChange={this.handleChange} />
         <button onClick={this.createAndDownloadPdf}>Download PDF</button>
